@@ -1,0 +1,42 @@
+{
+  "torch": "2.12.1",
+  "machine": "arm64",
+  "runs": [
+    {
+      "model": "smollm2-135m",
+      "device": "mps",
+      "dtype": "torch.float16",
+      "prefill_tokens": 256,
+      "prefill_tok_s": 3841.654274152342,
+      "decode_tok_s": 6.372555876250468,
+      "decode_lens_tok_s": 1.7898713990181596,
+      "decode_lens_attn_tok_s": 1.7554457869778355
+    },
+    {
+      "model": "smollm2-135m",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "prefill_tokens": 256,
+      "prefill_tok_s": 385.1851907637947,
+      "decode_tok_s": 10.130800086573872
+    },
+    {
+      "model": "qwen3-0.6b",
+      "device": "mps",
+      "dtype": "torch.float16",
+      "prefill_tokens": 256,
+      "prefill_tok_s": 1777.6358138005123,
+      "decode_tok_s": 10.061192612640788,
+      "decode_lens_tok_s": 1.5908015778697426,
+      "decode_lens_attn_tok_s": 1.82515598587646
+    },
+    {
+      "model": "qwen3-0.6b",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "prefill_tokens": 256,
+      "prefill_tok_s": 153.57542409245718,
+      "decode_tok_s": 4.099842499165248
+    }
+  ]
+}

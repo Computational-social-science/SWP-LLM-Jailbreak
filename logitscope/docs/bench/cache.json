@@ -1,0 +1,41 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "device": "mps",
+  "context_len": 52,
+  "scrubbed_nodes": 16,
+  "attn_scrub": {
+    "capture": {
+      "topk_logits": 8,
+      "attn_layers": [
+        15
+      ]
+    },
+    "recompute": {
+      "median_ms": 146.45635399210732,
+      "mean_ms": 163.36078637505125,
+      "n": 16
+    },
+    "hit": {
+      "median_ms": 6.15245849621715,
+      "mean_ms": 8.154468749125954,
+      "n": 16
+    }
+  },
+  "gen_scrub": {
+    "capture": {
+      "topk_logits": 32,
+      "lens": true,
+      "resid_norms": true
+    },
+    "recompute": {
+      "median_ms": 467.78927100240253,
+      "mean_ms": 469.9190286883095,
+      "n": 16
+    },
+    "hit": {
+      "median_ms": 1.320291506999638,
+      "mean_ms": 1.5976563754520612,
+      "n": 16
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "device": "mps",
+  "torch": "2.12.1",
+  "machine": "arm64",
+  "prompt_tokens": 20,
+  "gen_tokens": 32,
+  "capture": {
+    "topk_logits": 32,
+    "lens": true,
+    "resid_norms": true
+  },
+  "per_token_by_kind": {
+    "topk_ids": {
+      "json": 153.03125,
+      "f32": 138.0,
+      "f16": 138.0,
+      "wire": 137.84375
+    },
+    "topk_logits": {
+      "json": 303.84375,
+      "f32": 138.0,
+      "f16": 74.0,
+      "wire": 91.6875
+    },
+    "lens_ids": {
+      "json": 1021.71875,
+      "f32": 1006.0,
+      "f16": 1006.0,
+      "wire": 329.875
+    },
+    "lens_probs": {
+      "json": 4433.46875,
+      "f32": 1006.0,
+      "f16": 510.0,
+      "wire": 529.5
+    },
+    "resid_norms": {
+      "json": 225.125,
+      "f32": 134.0,
+      "f16": 72.0,
+      "wire": 93.3125
+    }
+  },
+  "per_token_total": {
+    "json": 6137.1875,
+    "f32": 2422.0,
+    "f16": 1800.0,
+    "wire": 1182.21875
+  },
+  "control_msg_bytes_per_token": 274.6875,
+  "attn_scrub_frame": {
+    "shape": [
+      9,
+      51,
+      51
+    ],
+    "ctx": 51,
+    "json": 280381,
+    "f32": 93654,
+    "f16": 46836,
+    "wire": 23339
+  }
+}

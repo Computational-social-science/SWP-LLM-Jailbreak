@@ -1,0 +1,7 @@
+torch>=2.1.2
+transformers>=4.36.2
+matplotlib>=3.8.2
+numpy>=1.26.3
+openai>=1.0.0
+datasets>=2.14.0
+scipy>=1.10.0
