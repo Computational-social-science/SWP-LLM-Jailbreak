@@ -2,7 +2,7 @@
 
 Code and a visualization instrument for studying what a single whitespace
 inserted inside a word does to a transformer's attention and to its next-token
-distribution. Nothing here identifies anyone; the demo needs no install.
+distribution. The demo needs no install.
 
 ## Demo
 
